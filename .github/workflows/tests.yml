@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        rust: ['1.85', stable]
+        rust: ['1.88', stable]
         include:
           - os: windows-latest
             rust: stable

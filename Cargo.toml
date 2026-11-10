@@ -2,7 +2,7 @@
 name = "smsgora"
 version = "1.0.0"
 edition = "2021"
-rust-version = "1.85"
+rust-version = "1.88"
 description = "Rust client for the SMS Gora SMS Gateway API: send and receive SMS through your own Android phones"
 license = "MIT"
 repository = "https://github.com/TekservixHQ/smsgora-rust"
