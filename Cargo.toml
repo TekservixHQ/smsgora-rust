@@ -1,0 +1,28 @@
+[package]
+name = "smsgora"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.85"
+description = "Rust client for the SMS Gora SMS Gateway API: send and receive SMS through your own Android phones"
+license = "MIT"
+repository = "https://github.com/TekservixHQ/smsgora-rust"
+homepage = "https://tekservix.com/smsgora/"
+documentation = "https://docs.rs/smsgora"
+readme = "README.md"
+keywords = ["sms", "sms-gateway", "bulk-sms", "otp", "android"]
+categories = ["api-bindings", "web-programming::http-client"]
+authors = ["Tekservix <support@tekservix.com>"]
+include = ["src/**", "Cargo.toml", "README.md", "LICENSE"]
+
+[features]
+default = ["default-tls"]
+default-tls = ["reqwest/default-tls"]
+native-tls = ["reqwest/native-tls"]
+
+[dependencies]
+reqwest = { version = "0.13", default-features = false, features = ["charset", "http2", "system-proxy"] }
+serde_json = "1"
+sha2 = "0.11"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
