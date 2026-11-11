@@ -1,9 +1,9 @@
 [package]
 name = "smsgora"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 rust-version = "1.88"
-description = "Rust client for the SMS Gora SMS Gateway API: send and receive SMS through your own Android phones"
+description = "SMS Gora SMS Gateway: official Rust client by Tekservix. Send and receive SMS through your own Android phones"
 license = "MIT"
 repository = "https://github.com/TekservixHQ/smsgora-rust"
 homepage = "https://tekservix.com/smsgora/"
